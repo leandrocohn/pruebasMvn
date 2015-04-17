@@ -28,7 +28,7 @@
 		<repository>
 			<id>git-lean</id>
 			<name>mvn-test-releases</name>
-			<url>https://github.com/leandrocohn/pruebasMvn.git/releases/</url>
+			<url>https://github.com/leandrocohn/pruebasMvn/tree/master/releases</url>
 		</repository>
 	</distributionManagement>
 </project>
