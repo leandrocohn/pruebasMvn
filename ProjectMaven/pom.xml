@@ -1,13 +1,40 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>com.test</groupId>
-  <artifactId>ProjectMaven</artifactId>
-  <version>0.0.1</version>
-  <name>PrjMvn</name>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.test</groupId>
+	<artifactId>ProjectMaven</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>PrjMvn</name>
 
-  <scm>
-    <developerConnection>scm:git:https://github.com/leandrocohn/pruebasMvn.git</developerConnection>
-    <tag>ProjectMaven-0.0.1</tag>
-  </scm>
+	<scm>
+		<developerConnection>scm:git:https://github.com/leandrocohn/pruebasMvn.git</developerConnection>
+		<tag></tag>
+	</scm>
 
+	<build>
+		<plugins>
+			<plugin>
+				<artifactId>maven-release-plugin</artifactId>
+				<version>2.5.1</version>
+				<configuration>
+					<tagBase>
+						https://github.com/leandrocohn/pruebasMvn.git/tags
+					</tagBase>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+	<distributionManagement>
+		<repository>
+			<id>git-lean</id>
+			<name>mvn-test-releases</name>
+			<url>https://github.com/leandrocohn/pruebasMvn.git/dbu-pe-releases/</url>
+		</repository>
+		<snapshotRepository>
+			<id>git-lean</id>
+			<name>dmvn-test-snapshots</name>
+			<url>https://github.com/leandrocohn/pruebasMvn.git/dbu-pe-snapshots/</url>
+		</snapshotRepository>
+	</distributionManagement>
 </project>
