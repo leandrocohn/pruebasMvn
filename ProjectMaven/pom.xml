@@ -2,7 +2,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.test</groupId>
 	<artifactId>ProjectMaven</artifactId>
-	<version>0.0.2</version>
+	<version>0.0.1-SNAPSHOT</version>
 	<name>PrjMvn</name>
 
 	<scm>
@@ -30,10 +30,5 @@
 			<name>mvn-test-releases</name>
 			<url>https://github.com/leandrocohn/pruebasMvn.git/releases/</url>
 		</repository>
-		<snapshotRepository>
-			<id>git-lean</id>
-			<name>dmvn-test-snapshots</name>
-			<url>https://github.com/leandrocohn/pruebasMvn.git/dbu-pe-snapshots/</url>
-		</snapshotRepository>
 	</distributionManagement>
 </project>
