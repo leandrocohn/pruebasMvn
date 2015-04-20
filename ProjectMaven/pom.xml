@@ -7,7 +7,7 @@
 
 	<scm>
 		<developerConnection>scm:git:https://github.com/leandrocohn/pruebasMvn.git</developerConnection>
-		<tag>ProjectMaven-0.0.9</tag>
+		<tag>ProjectMaven-0.0.10</tag>
 	</scm>
 
 	<build>
@@ -28,7 +28,7 @@
 		<repository>
 			<id>git-lean</id>
 			<name>mvn-test-releases</name>
-			<url>https://github.com/leandrocohn/pruebasMvn/tree/master/releases</url>
+			<url>https://github.com/leandrocohn/pruebasMvn.git/releases/</url>
 		</repository>
 	</distributionManagement>
 </project>
